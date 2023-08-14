@@ -11,9 +11,9 @@ const Footer = () => {
         <div className="f-content">
             <span>umairgopang123@gmail.com</span>
             <div className="f-iocns">
-                <UilInstagram color='white' size='3rem'/>
-                <UilLinkedinAlt color='white' size='3rem'/>
-                <UilGithub color='white' size='3rem'/>
+              <a href="https://www.facebook.com/people/WebMystik/61550205778903/" target='_blank' rel="noreferrer"><UilInstagram color='white' size='3rem'/></a>
+              <a href="https://twitter.com/webmystik" target='_blank' rel="noreferrer"><UilLinkedinAlt color='white' size='3rem'/></a>
+              <a  href="https://www.instagram.com/webmystik" target='_blank' rel="noreferrer"><UilGithub color='white' size='3rem'/></a>
             </div>
         </div>
     </div>

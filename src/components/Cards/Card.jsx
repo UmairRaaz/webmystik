@@ -11,7 +11,7 @@ const Card = ({emoji, heading, detail}) => {
       color : darkMode ?  'white' : ''
   }
   return (
-    <div className='card'>
+    <div div className='card'>
         <img src={emoji} alt="" />
         <span>{heading}</span>
         <span style={themeStyle}>{detail}</span>

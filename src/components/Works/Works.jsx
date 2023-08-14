@@ -7,12 +7,14 @@ import Shopify from '../../img/Shopify.png';
 import Facebook from '../../img/Facebook.png';
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
+import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 const Works = () => {
   let theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
   let themeStyle = {
-      color : darkMode ?  'white' : ''
+    color: darkMode ? 'white' : ''
   }
   return (
     <div className="works">
@@ -21,16 +23,21 @@ const Works = () => {
         <span style={themeStyle}>Work for all these</span>
         <span >Brands and Clients</span>
         <span style={themeStyle}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quae. <br />
-          Lorem ipsum dolor sit amet consectetur <br />
-          Lorem ipsum dolor sit amet consectetur <br />
+          I have had the privilege of working with <br />clients from renowned platforms such as <br />Facebook, Upwork, and Fiverr. <br />   Through these experiences, I have honed my skills <br /> as a front-end developer, delivering high-quality <br />web solutions that meet their unique requirements.  <br /> Let's collaborate to create an exceptional online presence for your brand.
         </span>
-        <button className="s-button button">Hire Me</button>
+        <Link spy={true} to='form' smooth={true} >
+          <button className="s-button button">Hire Me</button>
+        </Link>
         <div className="blur s-blur" style={{ background: '#ABF1FF94' }}></div>
       </div>
       {/* Right Side  */}
       <div className="w-right">
-        <div className="w-mainCircle">
+        <motion.div
+          initial={{ rotate: 45 }}
+          whileInView={{ rotate: 0 }}
+          viewport={{ margin: '-40px' }}
+          transition={{ duartion: 3.5, type: 'spring' }}
+          className="w-mainCircle">
           <div className="w-secCircle">
             <img src={Upwork} alt="" />
           </div>
@@ -46,7 +53,7 @@ const Works = () => {
           <div className="w-secCircle">
             <img src={Facebook} alt="" />
           </div>
-        </div>
+        </motion.div>
         {/* Background Circle  */}
         <div className="w-backCircle blueCircle"></div>
         <div className="w-backCircle yellowCircle"></div>

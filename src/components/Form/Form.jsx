@@ -3,7 +3,6 @@ import './Form.css';
 import emailjs from '@emailjs/browser';
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
-import { motion } from 'framer-motion';
 export const Form = () => {
 
     const form = useRef();
@@ -27,7 +26,7 @@ export const Form = () => {
     };
   
     return (
-        <div className='contact-form'>
+        <div className='contact-form' id='form'>
             <div className="w-left">
                 <div className="awesome">
                     <span style={themeStyle}>Get in touch</span>

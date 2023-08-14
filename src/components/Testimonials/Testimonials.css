@@ -64,3 +64,12 @@
 .t-wrapper .swiper-pagination-bullet-active{
     background: var(--orange);
 }
+@media screen and (max-width: 480px){
+    .t-wrapper{
+        padding: 0;
+    }
+    .t-wrapper>img{
+        width: 70px;
+        height: 70px;
+    }
+}

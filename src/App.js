@@ -5,7 +5,7 @@ import Services from "./components/Services/Services";
 import Experience from "./components/Experiences/Experience";
 import Works from "./components/Works/Works";
 import Portfolio from "./components/Portfolio/Portfolio";
-import Testimonials from "./components/Testimonials/Testimonials";
+// import Testimonials from "./components/Testimonials/Testimonials";
 import { Form } from "./components/Form/Form";
 import Footer from "./components/Footer/Footer";
 import { themeContext } from "./Context";
@@ -24,7 +24,7 @@ function App() {
       <Experience />
       <Works />
       <Portfolio />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Form />
       <Footer />
     </div>

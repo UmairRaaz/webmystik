@@ -10,7 +10,7 @@ const Experience = () => {
       color : darkMode ?  'var(--orange)' : ''
   }
   return (
-    <div className='experience'>
+    <div className='experience' id='Experience'>
         <div className="achievement">
             <div className="circle" style={themeStyle}>1.5+</div>
             <span>Years</span>
